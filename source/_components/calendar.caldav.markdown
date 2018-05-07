@@ -113,7 +113,7 @@ custom_calendars:
 
 ### {% linkable_title Sensor attributes %}
 
- - **offset_reached**: If set in the event title and parsed out will be on/off once the offset in the title in minutes is reached. So the title Very important meeting !!-10 would trigger this attribute to be on 10 minutes before the event starts.
+ - **offset_reached**: If `!!-mm` is added to the event title and parsed out, the sensor will turn on/off once the offset in the title in minutes is reached. So the title "Very important meeting !!-10" would set this attribute to `True` 10 minutes before the event starts.
  - **all_day**: `True/False` if this is an all day event. Will be `False` if there is no event found.
  - **message**: The event title with the `search` values extracted. So in the above example for `offset_reached` the message would be set to Very important meeting
  - **description**: The event description.
